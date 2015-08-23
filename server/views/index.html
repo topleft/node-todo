@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ title }}</p>
+
+    <form>
+
+      <div class="form-group">
+        <label for="todo-input">To Do Item</label>
+        <input type="text" class="form-control" id="todo-input" placeholder="To Do item">
+      </div>
+
+      <div class="form-group">
+        <label for="details-input">Details</label>
+        <textarea rows="10" type="text" class="form-control" id="details-input" placeholder="Details"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-default">Add</button>
+
+    </form>
+
+  </div>
+
+{% endblock %}
