@@ -10,19 +10,24 @@
     <h1>{{ title }}</h1>
     <p>Welcome to {{ title }}</p>
 
-    <form>
+    <form method="post" action="/submit">
 
       <div class="form-group">
         <label for="todo-input">To Do Item</label>
-        <input type="text" class="form-control" id="todo-input" placeholder="To Do item">
+        <input type="text" class="form-control" name="itemTitle" id="todo-input" placeholder="To Do item">
       </div>
 
       <div class="form-group">
         <label for="details-input">Details</label>
-        <textarea rows="10" type="text" class="form-control" id="details-input" placeholder="Details"></textarea>
+        <textarea rows="10" type="text" class="form-control" name="itemDetails" id="details-input" placeholder="Details"></textarea>
       </div>
 
-      <button type="submit" class="btn btn-default">Add</button>
+      <div class="form-group">
+        <label for="location-input">Location</label>
+        <input type="text" class="form-control" name="itemLocation" id="location-input" placeholder="Location">
+      </div>
+
+      <button id="add-todo" type="submit" class="btn btn-default">Add</button>
 
     </form>
 

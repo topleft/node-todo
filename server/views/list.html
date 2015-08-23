@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <h1>{{ title }}</h1>
+    <p>Welcome to {{ title }}</p>
+
+    <table id="list" class="table table-striped">
+      <tr>
+        <th>Todo Item</th>
+        <th>Details</th>
+      </tr>
+      {%for item in todos%}
+      <tr>
+        <td>{{item.title}}</td>
+        <td>{{item.details}}</td>
+        <td><a class="location">{{item.location}}</a></td>
+      </tr>
+      {%endfor%}
+    </table>
+
+    <div class="map toggle" id="map"></td>
+
+
+  </div>
+
+{% endblock %}

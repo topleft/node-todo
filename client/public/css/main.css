@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.map {
+  height: 200px;
+}
+
+.toggle {
+  display: none;
+}
